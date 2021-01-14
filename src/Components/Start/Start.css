@@ -1,0 +1,105 @@
+.Start {
+  background-color: #3b00e2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: #3b00e2;
+  /* padding: 1em; */
+  /* overflow: hidden; */
+}
+
+.spring-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+  transform-style: preserve-3d;
+  background-color: #3b00e2;
+}
+
+.first-text-cont {
+  transform: translateZ(50px);
+  font-size: 1.3em;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.first-text-cont div {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.second-text-cont {
+  /* font-size: 0.5em; */
+  font-size: 0.7em;
+  margin: 1em;
+  color: #cdf564;
+  overflow: hidden;
+}
+
+.second-text-cont div {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.start-btn {
+  padding: 0.5em 1em;
+  /* font-size: 0.8em; */
+  font-size: 1em;
+  font-weight: 900;
+  outline-style: none;
+  border: none;
+  background-color: #cdf564;
+  color: #3b00e2;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: translateZ(25px);
+  transition: background 0.7s ease;
+}
+
+.start-btn:hover {
+  background: white;
+}
+
+.user {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  /* font-size: 0.8em; */
+  font-size: 1.2em;
+  /* position: relative; */
+  z-index: 10;
+}
+
+@media (orientation: portrait) {
+  .first-text-cont {
+    font-size: 0.9em;
+  }
+
+  .second-text-cont {
+    font-size: 0.5em;
+  }
+
+  .start-btn {
+    font-size: 0.8em;
+  }
+
+  .user {
+    font-size: 0.8em;
+  }
+}

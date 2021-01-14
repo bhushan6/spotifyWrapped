@@ -1,0 +1,109 @@
+.TopGenre {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.TopGenre .genre-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #3b00e2;
+  color: white;
+  font-size: 1rem;
+}
+
+.TopGenre .genre-bg h1 {
+  opacity: 0.1;
+}
+
+.TopGenre .initial-animate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TopGenre .initial-animate .textOne,
+.textTwo {
+  margin: 0.5em;
+  color: #cdf564;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+
+.TopGenre .initial-animate .textOne {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.TopGenre .initial-animate .textTwo {
+  font-size: 1em;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.TopGenre .title {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+.TopGenre .title h1 {
+  color: #cdf564;
+  transform: translateY(100%);
+  transition: transform ease 0.7s;
+}
+
+.slideUp {
+  transform: translateY(0%) !important;
+}
+
+.TopGenre .top-genre-chart-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #cdf564;
+  text-transform: capitalize;
+}
+
+.Ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) !important;
+  /* transform: translateX(-50%) !important; */
+}
+
+.Ring svg circle {
+  transform: rotate(-90deg);
+}
+
+.Ring .genre-sticker {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  font-size: 5px;
+  text-align: right;
+  margin-right: 5px;
+  width: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+}
+/* 
+.display {
+  /* opacity: 1 !important; */

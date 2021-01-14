@@ -1,0 +1,47 @@
+.Song {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 1em;
+  /* opacity: 1; */
+  width: 30vw;
+}
+
+.Song .song-img,
+.song-info {
+  margin: 16px;
+}
+
+.Song .song-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5em;
+  /* color: white; */
+  width: 20vw;
+}
+
+.Song .song-info .song-artist {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+.Song .song-img img {
+  width: 5vw;
+}
+
+@media (orientation: portrait) {
+  .Song {
+    width: 80vw;
+  }
+  .Song .song-info {
+    width: 60vw;
+    font-size: 0.5em;
+  }
+
+  .Song .song-img img {
+    width: 15vw;
+    object-fit: cover;
+  }
+}

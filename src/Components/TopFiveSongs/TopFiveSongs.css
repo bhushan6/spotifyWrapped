@@ -1,0 +1,56 @@
+.TopFiveSongs {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3b00e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TopFiveSongs .initial-animate {
+  color: #cdf564;
+  text-align: center;
+  overflow: hidden;
+}
+
+.TopFiveSongs .initial-animate .DIV {
+  overflow: hidden;
+  margin: 0.5em;
+}
+
+.TopFiveSongs .initial-animate .DIV.ONE {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.TopFiveSongs .initial-animate div {
+  overflow: hidden;
+}
+
+.TopFiveSongs .top-song-list div {
+  overflow: hidden;
+}
+
+.TopFiveSongs .top-song-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TopFiveSongs .text-bg {
+  width: 130%;
+  height: 100%;
+  font-size: 10vw;
+}
+
+.TopFiveSongs .text-bg p {
+  color: white;
+  font-weight: 800;
+  opacity: 0.1;
+}
