@@ -120,7 +120,7 @@ function TopGenre({spotify}) {
                 <div className="page-no">
                     <p><span>4</span> / 4</p>
                 </div>
-                <div className="next">
+                <div className="next" style={{opacity:0, pointerEvents: "none"}}>
                     <Link to="/">
                         <FaChevronDown style={{color:"white"}}/>
                     </Link>
