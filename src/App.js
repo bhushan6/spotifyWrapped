@@ -29,9 +29,7 @@ function App() {
 
       spotify.setAccessToken(_token) 
       
-    }
-
-    
+    } 
 }, [])
 
   return (
