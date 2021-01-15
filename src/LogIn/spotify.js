@@ -2,7 +2,6 @@
 
 const authrise_uri = "https://accounts.spotify.com/authorize"
 const client_id = process.env.REACT_APP_CLIENT_ID
-console.log(process.env.REACT_APP_CLIENT_ID)
 const redirect_uri = "http://localhost:3000/"
 const encoded_uri = encodeURI(redirect_uri)
 const scope = [

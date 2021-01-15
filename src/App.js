@@ -28,7 +28,7 @@ function App() {
       setToken(_token)
 
       spotify.setAccessToken(_token) 
-
+      
     }
 
     

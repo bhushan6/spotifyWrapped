@@ -98,7 +98,6 @@ function TopFiveSongs({spotify}) {
     }, [])
 
     const getSong = (number) => {
-        console.log("song", songs)
         return (
             <Song songName={songs[number].name} songImg={songs[number].album.images[1].url} songArtist= {songs[number].album.artists[0].name} />
         )

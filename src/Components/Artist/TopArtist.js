@@ -10,6 +10,7 @@ function TopArtist({spotify}) {
     const [loading, setLoading] = useState(false)
     const [album, setAlbum] = useState([])
     const [letters, setLetters] = useState(0)
+    const [audioUrl, setAudioUrl] = useState(null)
 
     const calc = (x, y) => [((window.innerHeight / 2) - y )/50, (x - window.innerWidth / 2)/50, 1.1]
     const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
@@ -69,6 +70,7 @@ function TopArtist({spotify}) {
     async function getTopArtist () {
         const resp = await spotify.getMyTopArtists();
         const artists = resp.items;
+        spotify.getArtistTopTracks(artists[0].id, "us").then(a => setAudioUrl(a.tracks[0].preview_url))
         let letter = 0;
         setTopArtist(artists[0])
         spotify.getArtistAlbums(artists[1].id).then(albumResp => {
@@ -327,6 +329,7 @@ function TopArtist({spotify}) {
                     </Link>
                 </div>
             </motion.div>
+            {loading? (<audio src={audioUrl} autoPlay loop/>) : null}
         </motion.div>
     )
 }

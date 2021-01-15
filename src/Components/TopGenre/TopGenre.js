@@ -21,12 +21,8 @@ function TopGenre({spotify}) {
             // height: "100%"
         },
         anim : {
-            // height: "0%",
             transition: {
                 staggerChildren: 1,
-                // when: "afterChildren"
-                // delay: 2.5,
-                // duration:1
             }
         }
     }
@@ -72,10 +68,8 @@ function TopGenre({spotify}) {
 
     useEffect(() => {
         getGenre()
-        // console.log(allGenre)
     }, [])
 
-    // {loaded? genre.slice(0, 5).map(a => (<h1>{a}</h1>)) : null}
     
     return (
         <motion.div className="TopGenre" >
@@ -115,7 +109,6 @@ function TopGenre({spotify}) {
                 )) : null}
             </motion.div>
             <div className="genre-bg">
-                {loaded? console.log(letters) : null}
                 <h1 style={loaded? {fontSize:`${100/(letters/35)}vw`} : {fontSize: "6.5vw"}}>{loaded? allGenre.map(item => {return `${item} `}) : null}</h1>
             </div>
             <motion.div className="pagination" initial={{opacity:0}} animate={{ opacity:1}} exit={{opacity:0}} transition={{duration:1}}>
